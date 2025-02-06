@@ -1,0 +1,49 @@
+body {
+    font-family:'Papyrus', cursive;
+    color: #555; 
+    font-size: 16px;
+    background-color: wheat; 
+  }
+  
+h1, h2, h3 {
+    
+    color: navy; 
+  }
+  
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #555; 
+  }
+  
+mark {
+    background-color: yellow; 
+    color: black;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: yellow; /* Red */
+  }
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+
+#mainContent {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+  }
+.emphasize {
+    color: navy;
+}
+
+.deemphasize {
+    color: #999;
+}
+  .special-text {
+    color: #1976d2; /* Blue */
+    font-style: italic;
+  }
+   
