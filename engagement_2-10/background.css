@@ -1,0 +1,19 @@
+body {
+    background-image: url('bluebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+main {
+    background-color: aliceblue;
+}
+.soccer {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    
+}
