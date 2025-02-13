@@ -5,12 +5,12 @@ a {
 .here {
     color: grey;
 }
-h1,h3 {
-    text-align: center;
-}
+
 .kahuku, .hauula {
     width: 900px;
 }
+
+
 
 body {
     background-image: url('beachback.jpg');
@@ -19,4 +19,5 @@ body {
     background-repeat: repeat;
 
     font-family:"Papyrus",cursive ;
+    font-size: 30px;
 }
