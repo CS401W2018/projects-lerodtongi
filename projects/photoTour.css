@@ -1,0 +1,22 @@
+a {
+    color: black;
+}
+
+.here {
+    color: grey;
+}
+h1,h3 {
+    text-align: center;
+}
+.kahuku, .hauula {
+    width: 900px;
+}
+
+body {
+    background-image: url('beachback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+
+    font-family:"Papyrus",cursive ;
+}
