@@ -32,3 +32,12 @@ nav{
 .card img {
     width: 100%;
 }
+
+@media print {
+    nav{
+        display: none;
+    }
+    h1 {
+        text-align: center;
+    }
+}
