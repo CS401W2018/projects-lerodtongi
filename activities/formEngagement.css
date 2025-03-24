@@ -1,0 +1,39 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+header{
+    background-color: blue;
+    text-align: center;
+    color: azure;
+}
+fieldset{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.genders{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.interests{
+    display: flex;
+    
+}
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    label {
+        display: block;
+        text-align: left;
+    }
+    button {
+        width: 100%;
+        font-size: 1.2em;
+    }
+}
