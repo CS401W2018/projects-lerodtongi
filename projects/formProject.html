@@ -12,12 +12,15 @@
     </header>
     
     <main>
-        <form action="#" method="POST">
+        <form action="#" method="POST" id="myForm">
             <fieldset>
                 <legend>Please Fill Out:</legend>
                 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
                 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
@@ -25,11 +28,9 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
                 
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required>
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
                 
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
             </fieldset>
             <fieldset class="genders">
                 <label for="gender">Gender:</label>
@@ -52,6 +53,7 @@
             <fieldset>
                 <label for="country">Country:</label>
                 <select id="country" name="country">
+                    <option value="blank" disabled selected>Make Selection</option>
                     <option value="usa">USA</option>
                     <option value="canada">Canada</option>
                     <option value="mexico">Mexico</option>
@@ -74,5 +76,30 @@
     <footer>
         <p>&copy; LeRod Tongi 2025</p>
     </footer>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const first = document.getElementById("firstname").value;
+            const last = document.getElementById("lastname").value;
+            const age = document.getElementById("age").value;
+
+            if (!first || !last) {
+                alert("Please provide your full name.");
+                return;
+            }
+
+            if (!age || age<18) {
+                alert("You must be 18 years or older to submit this form.");
+                return;
+            }
+
+            const data = {
+                firstname: first,
+                lastname: last
+            }
+
+            console.log(data);;
+        })
+    </script>
 </body>
 </html>

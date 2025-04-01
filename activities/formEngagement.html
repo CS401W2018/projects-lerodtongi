@@ -12,7 +12,7 @@
     </header>
     
     <main>
-        <form action="#" method="POST">
+        <form action="#" method="POST" id="myForm">
             <fieldset>
                 <legend>Please Fill Out:</legend>
                 
@@ -52,6 +52,7 @@
             <fieldset>
                 <label for="country">Country:</label>
                 <select id="country" name="country">
+                    <option value="blank" disabled selected>Make Selection</option>
                     <option value="usa">USA</option>
                     <option value="canada">Canada</option>
                     <option value="mexico">Mexico</option>
@@ -68,9 +69,9 @@
                 <div class="spacer"></div>
                 <button type="submit">Submit</button>
             </fieldset>
+            
         </form>
     </main>
-    
     <footer>
         <p>&copy; LeRod Tongi 2025</p>
     </footer>
@@ -78,8 +79,8 @@
         document.getElementById('myForm').addEventListener('submit',function(event) {
             alert('Form Submitted')
             event.preventDefault();
-            const fullname=document.getElementById('fullname').value;
-            console.log('fullname');
+            const fullname=document.getElementById('name').value;
+            console.log('name');
         });
     </script>
 </body>
