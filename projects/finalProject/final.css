@@ -127,6 +127,26 @@ h1 {
   padding: 0;
 }
 
+.disclaimer {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 20px;
+  margin-top: 40px;
+  border: 1px solid #ffeeba;
+  border-radius: 10px;
+}
+
+.disclaimer h3 {
+  margin-bottom: 10px;
+}
+
+.disclaimer ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #fdfaf7;
